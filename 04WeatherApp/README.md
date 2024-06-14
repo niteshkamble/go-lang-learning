@@ -2,6 +2,8 @@
 
 WeatherApp is a simple command-line application written in Go that allows users to get current weather information. User can also use --city flag for specific City.
 
+![WeatherApp Demo](./GoWeatherAPP.gif)
+
 ## Installation 
 1. **Clone the repository:**
 ```sh
