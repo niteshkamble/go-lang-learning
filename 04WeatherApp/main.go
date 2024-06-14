@@ -104,9 +104,16 @@ func main() {
 			hour.Condition.Text)
 
 		if hour.ChanceOfRain <= 50 {
-			fmt.Print(data)
+			if hour.FeelsLikeC <= 36 {
+				fmt.Print(data)
+			} else {
+				//if the tepm feels like >=36 (note:not temp. its feelsliketemp)
+				color.Yellow(data)
+			}
 		} else {
+			//if there are chances of rain
 			color.Red(data)
 		}
+
 	}
 }
